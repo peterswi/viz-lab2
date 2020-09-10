@@ -1,4 +1,14 @@
-// TODO: load the dataset
+
+let attractions;
+fetch('')
+    .then(response => response.json())
+    .then(data => {
+        attractions=data;
+        console.log(attractions);
+    }
+)
+
+
 
 function filterData(category) {
 
