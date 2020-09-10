@@ -6,9 +6,10 @@ fetch('attractions.json')
         attractions=data;
         console.log(attractions);
     }
-);
+    )
 
-
+let topAttractions = attractions.sort((a,b)=> a.Visitors-b.Visitors);
+console.log(topAttractions)
 
 function filterData(category) {
 
