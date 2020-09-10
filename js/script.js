@@ -1,12 +1,12 @@
 
 let attractions;
-fetch('')
+fetch('attractions.json')
     .then(response => response.json())
     .then(data => {
         attractions=data;
         console.log(attractions);
     }
-)
+);
 
 
 
