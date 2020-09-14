@@ -95,7 +95,7 @@ function renderBarChart(data) {
             return height - y(d.Visitors);
         })
         .attr("width", x.bandwidth())
-        .on("mouseover", function(d) {
+        .on("mouseover", function(event, d) {
             //Get this bar's x/y values, then augment for the tooltip
             let xPosition =
                 margin.left +
