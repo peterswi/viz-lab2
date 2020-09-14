@@ -19,9 +19,14 @@
 function filterData(category) {
     let attractions;
     let topFive;
+    if(category=='all'){
+        return;
+    }
+    console.log('we made it here')
     fetch('attractions.json')
         .then(response => response.json())
         .then(data => {
+            console.log(category)
             attractions=data;
             // this isnt correct! attractions.filter(category)
             attractions.sort((a,b)=> b.Visitors-a.Visitors);
@@ -35,7 +40,9 @@ function filterData(category) {
    
 }
 
-
+function typeFilter(cat, parkArr){
+    return cat==parkArr.category
+}
 // TODO: Define an event listener for the dropdown menu
 //       Call filterData with the selected category
 function onchange(e) {
