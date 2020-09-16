@@ -94,6 +94,10 @@ function renderBarChart(data) {
         .attr("height", function(d) {
             return height - y(d.Visitors);
         })
+        .attr("fill", function(d) {
+            console.log(d)
+            return "rgb(100, 100, " + Math.floor(d.Visitors / 100000) + ")";
+        })
         .attr("width", x.bandwidth())
         .on("mouseover", function(event, d) {
             //Get this bar's x/y values, then augment for the tooltip
