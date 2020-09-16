@@ -1,6 +1,6 @@
 /* Viz Lab 2-- Will Peters*/
    body {
-       background-color: #d1dfb7;
+       background-color: #b7dfd2;
        font-family: 'Times New Roman', Times, serif;
    }
 
@@ -22,6 +22,7 @@ h2 {
 
 .user-control label {
     margin-right: 20px;
+    
 }
 
 .user-control #attraction-category {
@@ -30,6 +31,7 @@ h2 {
     max-width: 200px;
     border: 1px solid #75D4CA;
     outline: none;
+    
 }
 .user-control #attraction-category:hover {
     background: #4bc2b6;
@@ -50,10 +52,13 @@ h2 {
 
 .bar {
     fill: #3C948B;
+    stroke: #d8d1d1ab;
+    stroke-width: 5;
 }
 
 .bar:hover {
     fill: #327972;
+    stroke: none;
 }
 
 .axis {

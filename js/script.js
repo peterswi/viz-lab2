@@ -13,8 +13,6 @@
      }
  )   
  
-// let topAttractions = attractions.sort((a,b)=> a.Visitors-b.Visitors);
-// console.log(topAttractions)
 
 function filterData(category) {
     let attractions;
@@ -25,10 +23,11 @@ function filterData(category) {
             console.log(category)
             attractions=data;
             if(category!='all'){
+                // want to filter out other options if we arent in the 'all' category
                 console.log('not all')
                 attractions=attractions.filter(attraction=>attraction.Category==category)
             }
-            // this isnt correct! attractions.filter(category)
+            
             attractions.sort((a,b)=> b.Visitors-a.Visitors);
             console.log('sorted',attractions)
             topFive=attractions.slice(0,5);
