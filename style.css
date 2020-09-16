@@ -5,8 +5,9 @@
    }
 
 h1 {
-    margin-bottom: 60px;
+    margin:40px;
     font-weight: 100;
+    text-align: center;
 }
 
 h2 {
@@ -27,14 +28,15 @@ h2 {
 
 .user-control #attraction-category {
     display: inline-block;
-    background: transparent;
-    max-width: 200px;
-    border: 1px solid #75D4CA;
+    background: #b7dfd2;
+    max-width: 150px;
+    border: 3px solid #75D4CA;
     outline: none;
+   
     
 }
 .user-control #attraction-category:hover {
-    background: #4bc2b6;
+    background: #3C948B;
     font-size: 110%;
     color: #ffffff;
     
@@ -62,8 +64,13 @@ h2 {
 }
 
 .axis {
-    font: 10px sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.axis:hover{
+    font-size: 65%;
+
+}
+
 
 .axis path,
 .axis line,
@@ -83,7 +90,11 @@ h2 {
 
 .axis-title {
     fill: #888;
-    font-size: 12px;
+    font-size: 12PX;
+    font-family: 'Times New Roman', Times, serif;
+}
+.axis-title:hover{
+    font-size: 80%;
 }
 
 /****************/
@@ -91,7 +102,7 @@ h2 {
 /****************/
 
 #tooltip {
-    position: absolute;
+    position: fixed;
     width: 150px;
     height: auto;
     padding: 10px;
@@ -109,7 +120,7 @@ h2 {
 }
 #tooltip p {
     margin: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 16px;
     line-height: 20px;
 }

@@ -36,18 +36,23 @@
 <body>
 <div class="container">
     <h1 >Global Attractions Attendance </h1> <!--Make this class='title' if bulma, class='' for Milligram-->
-
-    <div class="user-control"><!--Make this class='select' if bulma, class='user-control' if miligram-->
-        <select id="attraction-category" class="form-control">
-            <option value="all">All Attractions</option>
-            <option  value="Theme Park">Theme Park</option>
-            <option value="Water Park">Water Park</option>
-            <option value="Museum">Museum</option>
-        </select>
-    </div>
-
-    <!-- Parent container of our bar chart -->
-    <div id="chart-area"></div>
+        <div class='row'>
+            <div class='column'>
+        
+                <div class="user-control"><!--Make this class='select' if bulma, class='user-control' if miligram-->
+                    <select id="attraction-category" class="form-control">
+                        <option value="all">All Attractions</option>
+                        <option  value="Theme Park">Theme Park</option>
+                        <option value="Water Park">Water Park</option>
+                        <option value="Museum">Museum</option>
+                    </select>
+                </div>
+            </div>
+            <div class='column column-80'>
+                <!-- Parent container of our bar chart -->
+                <div id="chart-area"></div>
+            </div>
+        </div>
 </div>
 
 <div id="tooltip" class="hidden">
