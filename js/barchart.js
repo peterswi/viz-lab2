@@ -96,7 +96,7 @@ function renderBarChart(data) {
         })
         .attr("fill", function(d) {
             console.log(d)
-            return "rgb(100, 100, " + Math.floor(d.Visitors / 100000) + ")";
+            return "rgb(100, 200, " + Math.floor(d.Visitors / 100000) + ")";
         })
         .attr("width", x.bandwidth())
         .on("mouseover", function(event, d) {
