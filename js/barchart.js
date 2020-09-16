@@ -1,5 +1,5 @@
 /*****************************************/
-/*   DRAW BAR CHART - ALREADY COMPLETE   */
+/*   DRAW BAR CHART - ALREADY COMPLETE-- WP made changes 9.16   */
 /*****************************************/
 
 // CHART AREA
